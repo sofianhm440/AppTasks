@@ -1,0 +1,62 @@
+.settings-page {
+    margin-top: 25px;
+}
+
+.settings-page h2 {
+    font-size: 24px;
+    color: #2d3436;
+    margin-bottom: 20px;
+}
+
+.theme-settings {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    max-width: 500px;
+}
+
+.theme-settings h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.theme-settings p {
+    color: #636e72;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.theme-settings button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #6c5ce7;
+    color: white;
+    transition: 0.3 ease;
+}
+
+.theme-settings button:hover {
+    opacity: 0.85;
+}
+
+/* DARK MODE */
+
+.app.dark .settings-page h2 {
+    color: #ffffff;
+}
+
+.app.dark .theme-settings {
+    background-color: #252538;
+    border-color: #383850;
+}
+
+.app.dark .theme-settings h3 {
+    color: #ffffff;
+}
+
+.app.dark .theme-settings p {
+    color: #a0a0b5;
+}

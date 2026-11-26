@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 35px;
+}
+
+.app.light {
+  background-color: #f8f9fc;
+  color: #2d3436;
+}
+
+.app.dark {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 20px 15px;
+  }
+
+  .app {
+    flex-direction: column;
+  }
+}
