@@ -7,7 +7,7 @@ export default function Tasks({ tasks, setTasks, search, showActions = true }) {
       "Are you sure want to delete this task?",
     );
     if (isConfirmed) {
-      fetch(`http://localhost:5001/api/tasks/${id}`, {
+      fetch(`https://app-tasks-omega.vercel.app/api/tasks/${id}`, {
         method: "DELETE",
       }).then(() =>
         setTasks((prevTask) => prevTask.filter((task) => task.id !== id)),
@@ -16,7 +16,7 @@ export default function Tasks({ tasks, setTasks, search, showActions = true }) {
   };
 
   const handleUpdate = (id, newStatus) => {
-    fetch(`http://localhost:5001/api/tasks/${id}`, {
+    fetch(`https://app-tasks-omega.vercel.app/api/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Tasks({ tasks, setTasks, search, showActions = true }) {
       return;
     }
 
-    fetch("http://localhost:5001/api/tasks", {
+    fetch("https://app-tasks-omega.vercel.app/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

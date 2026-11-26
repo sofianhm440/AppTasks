@@ -13,7 +13,7 @@ export default function App() {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    fetch("http://localhost:5001/api/tasks")
+    fetch("https://app-tasks-omega.vercel.app/api/tasks")
       .then((response) => response.json())
       .then((data) => setTasks(data));
   }, []);
